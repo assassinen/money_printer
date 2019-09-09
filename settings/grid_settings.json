@@ -1,0 +1,30 @@
+[
+  {
+    "py/object": "models.settings.GridSettings",
+    "API_KEY": "your_API_KEY_for_bitmex",
+    "GRID_DEPTH": 5,
+    "GRID_SIDE": "Buy",
+    "ORDER_SIZE": 50,
+    "ORDER_SPREAD": 10,
+    "ORDER_STEP": 30,
+    "RATIO": 1,
+    "REVERSE_SIDE": "Sell",
+    "SYMBOL": "XBTUSD",
+    "active": false,
+    "strategy": "average_price"
+  },
+  {
+    "py/object": "models.settings.GridSettings",
+    "API_KEY": "your_API_KEY_for_deribit",
+    "GRID_DEPTH": 5,
+    "GRID_SIDE": "Buy",
+    "ORDER_SIZE": 50,
+    "ORDER_SPREAD": 10,
+    "ORDER_STEP": 30,
+    "RATIO": 1,
+    "REVERSE_SIDE": "Sell",
+    "SYMBOL": "BTC-PERPETUAL",
+    "active": false,
+    "strategy": "average_price"
+  }
+]

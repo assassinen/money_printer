@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+
+  grid_client:
+    image: assassinen/grid_client
+    volumes:
+      - ./settings:/settings

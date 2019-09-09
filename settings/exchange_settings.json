@@ -1,0 +1,20 @@
+[
+  {
+    "py/object": "models.settings.ExchangeSettings",
+    "API_KEY": "your_API_KEY_for_bitmex",
+    "API_SECRET": "your_API_SECRET_for_bitmex",
+    "API_URL": "/api/v1/",
+    "BASE_URL": "https://testnet.bitmex.com",
+    "EXCHANGE": "bitmex",
+    "LOOP_INTERVAL": 5
+  },
+  {
+    "py/object": "models.settings.ExchangeSettings",
+    "API_KEY": "your_API_KEY_for_deribit",
+    "API_SECRET": "your_API_SECRET_for_deribit",
+    "API_URL": "/api/v2/",
+    "BASE_URL": "https://test.deribit.com",
+    "EXCHANGE": "deribit",
+    "LOOP_INTERVAL": 5
+  }
+]
