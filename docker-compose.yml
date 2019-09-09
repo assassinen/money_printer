@@ -2,7 +2,7 @@ version: '3'
 
 services:
 
-  grid_client:
+  money_printer:
     image: assassinen/grid_client
     volumes:
       - ./settings:/settings
