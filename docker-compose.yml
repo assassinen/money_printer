@@ -5,4 +5,4 @@ services:
   money_printer:
     image: assassinen/grid_client
     volumes:
-      - ./settings:/settings
+      - ./settings:/grid_client/settings
