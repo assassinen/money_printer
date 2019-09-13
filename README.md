@@ -1,12 +1,12 @@
 # money printer
-Money printer is a bot designed for cryptocurrency trading. The bot is able to trade on www.deribit.com and bitmex.com. In order to use the bot you need To:
+Money printer is a bot designed for cryptocurrency trading. The bot is able to trade on www.deribit.com and www.bitmex.com. In order to use the bot you need To:
 1. Clone the repository (Installation)
 2. To configure the bot (Settings):
     * set API_KEY in settings/grid_settings.json
     * set active to true in settings/grid_settings.json
     * set API_KEY in settings/exchange_settings.json
     * set API_SECRET in settings/exchange_settings.json
-3. Start (Run the bot)
+3. Start trading (Run the bot)
 
 
 ## Installation
