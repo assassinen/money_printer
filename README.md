@@ -1,4 +1,4 @@
-# grid_client
+# money printer
 
 ## Installation
     $ git clone https://github.com/assassinen/grid_client.git
