@@ -6,7 +6,7 @@ Money printer is a bot designed for cryptocurrency trading. The bot is able to t
     * set active to true in settings/grid_settings.json
     * set API_KEY in settings/exchange_settings.json
     * set API_SECRET in settings/exchange_settings.json
-3. Start (Run the bot)
+3. Start trading (Run the bot)
 
 
 ## Download
