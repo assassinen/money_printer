@@ -30,7 +30,7 @@ Money printer is a bot designed for cryptocurrency trading. The bot is able to t
     "ORDER_SPREAD": 10,                         # profit value from each order
     "ORDER_STEP": 30,                           # price difference between orders
     "START_STEP": 5,                            # the difference in the price of the first order and the market price
-    "FREQUENCY_RATE": 0.5,                     # the multiplicity of rounding prices
+    "FREQUENCY_RATE": 0.5,                      # the multiplicity of rounding prices
     "REVERSE_SIDE": "sell",                     # direction of orders to close a position
     "SYMBOL": "XBTUSD",                         # trading instrument
     "active": false,                            # set true to the robot worked
