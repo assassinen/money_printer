@@ -1,3 +1,6 @@
+# Контакты автора
+email: assassinen@ya.ru
+
 # money printer
 Money printer is a bot designed for cryptocurrency trading. The bot is able to trade on www.deribit.com and www.bitmex.com. In order to use the bot you need To:
 1. Clone or Download the repository.
