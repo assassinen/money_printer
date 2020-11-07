@@ -1,4 +1,4 @@
-# Контакты автора
+# Сontacts
 email: assassinen@ya.ru
 
 # money printer
