@@ -3,6 +3,6 @@ version: '3'
 services:
 
   money_printer:
-    image: assassinen/grid_client
+    image: assassinen/grid_bot
     volumes:
-      - ./settings:/grid_client/settings
+      - ./settings:/grid_bot/settings
