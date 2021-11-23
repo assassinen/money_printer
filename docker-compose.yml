@@ -1,8 +1,12 @@
 version: '3'
 
 services:
-
   money_printer:
-    image: assassinen/grid_bot
+    image: assassinen/grid_bot_client:latest
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "10"
     volumes:
       - ./settings:/grid_bot/settings
