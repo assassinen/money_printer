@@ -20,41 +20,33 @@ Money printer is a bot designed for cryptocurrency trading. The bot is able to t
     $ git clone https://github.com/assassinen/grid_client.git
     $ cd grid_client
 
+## Register a new user
+   open [a link](http://grid-bot-server.herokuapp.com/docs#/operations/users_new)
+
 ## Settings 
-* change the settings for the bot `settings/grid_settings.json`:
+* change the settings for the bot `settings/bot_settings.json`:
 ```yaml
 [
   {
-    "py/object": "models.settings.GridSettings"
-    "API_KEY": "your_API_KEY_for_bitmex",       # set your API_KEY
-    "GRID_DEPTH": 5,                            # maximum number of orders                               
-    "GRID_SIDE": "buy",                         # direction of orders to open a position
-    "ORDER_SIZE": 50,                           # lot size
-    "ORDER_SPREAD": 10,                         # profit value from each order
-    "ORDER_STEP": 30,                           # price difference between orders
-    "START_STEP": 5,                            # the difference in the price of the first order and the market price
-    "FREQUENCY_RATE": 0.5,                      # the multiplicity of rounding prices
-    "REVERSE_SIDE": "sell",                     # direction of orders to close a position
-    "SYMBOL": "XBTUSD",                         # trading instrument
-    "active": false,                            # set true to the robot worked
-    "strategy": "average_price"                 # trading strategy name
+    "py/object": "models.settings.Settings",
+    "API_KEY": "your_API_KEY_for_bitmex",               # set your API_KEY
+    "API_SECRET": "your_API_SECRET_for_bitmex",         # set your API_SECRET
+    "TOKEN": ""
+    "API_URL": "v2",                                    # API version
+    "BASE_URL": "https://api.bitfinex.com/",            # exchange url (e.g https://www.bitmex.com, https://www.deribit.com)
+    "EXCHANGE": "bitfinex",                             # exchange name (e.g bitmex, deribit)
+    "LOOP_INTERVAL": 10,                                # refresh rate in seconds
+    "GRID_DEPTH": 100,                                  # maximum number of orders
+    "GRID_SIDE": "buy",                                 # direction of orders to close a position
+    "ORDER_SIZE": 0.0005,                               # lot size
+    "ORDER_SPREAD": 1000,                               # profit value from each order
+    "ORDER_STEP": 500,                                  # price difference between orders
+    "SYMBOL": "tBTCUSD",                                # trading instrument
+    "active": true,                                     # set true to the robot worked
+    "strategy": "trades_price"                          # trading strategy name
   }
 ]
  ```
-* change the settings for the exchange `settings/exchange_settings.json`:
-```yaml
-[
-  {
-    "py/object": "models.settings.ExchangeSettings",
-    "API_KEY": "your_API_KEY_for_bitmex",                 # your API KEY
-    "API_SECRET": "your_API_SECRET_for_bitmex",           # your API_SECRET   
-    "API_URL": "/api/v1/",                                # API version
-    "BASE_URL": "https://testnet.bitmex.com",             # exchange url (e.g https://www.bitmex.com, https://www.deribit.com)
-    "EXCHANGE": "bitmex",                                 # exchange name (e.g bitmex, deribit)
-    "LOOP_INTERVAL": 5
-  },
-]
-```
 
 ## Run the bot:
 Download [Docker Desktop](https://www.docker.com/products/docker-desktop) for Mac or Windows. [Docker Compose](https://docs.docker.com/compose) will be automatically installed. On Linux, make sure you have the latest version of [Compose](https://docs.docker.com/compose/install/). 
