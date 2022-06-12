@@ -4,12 +4,14 @@ email: assassinen@ya.ru
 # money printer
 Money printer is a bot designed for cryptocurrency trading. The bot is able to trade on www.deribit.com and www.bitmex.com. In order to use the bot you need To:
 1. Clone or Download the repository.
-2. To configure the bot (Settings):
-    * set API_KEY in settings/grid_settings.json
-    * set active to true in settings/grid_settings.json
-    * set API_KEY in settings/exchange_settings.json
-    * set API_SECRET in settings/exchange_settings.json
-3. Start trading (Run the bot)
+2. Register a new user
+3. Create new access tokens
+4. To configure the bot (Settings):
+    * set active to true in settings/bot_settings.json
+    * set TOKEN in settings/bot_settings.json
+    * set API_KEY in settings/bot_settings.json
+    * set API_SECRET in settings/bot_settings.json
+5. Start trading (Run the bot)
 
 
 ## Download
@@ -21,7 +23,18 @@ Money printer is a bot designed for cryptocurrency trading. The bot is able to t
     $ cd grid_client
 
 ## Register a new user
-   open http://grid-bot-server.herokuapp.com/docs#/operations/users_new
+      open http://grid-bot-server.herokuapp.com/docs#/operations/users_new
+      set "Username"
+      set "Password"
+      press "Set API Request"
+      set access_token in TOKEN 
+      сopy access_token in TOKEN field to settings/bot_settings.json
+
+## Create new access tokens
+      open http://grid-bot-server.herokuapp.com/docs#/operations/tokens_new
+      set "Username"
+      set "Password"
+      press "Set API Request"
 
 ## Settings 
 * change the settings for the bot `settings/bot_settings.json`:
@@ -66,14 +79,14 @@ Download [Docker Desktop](https://www.docker.com/products/docker-desktop) for Ma
 ```
 $ docker-compose logs -f
 Attaching to gridclient_money_printer_1
-money_printer_1  | 2019-09-13 09:00:28,233 - average_price.7w566cLl - positions: {'average_price': 0.0, 'size': 0.0}
-money_printer_1  | 2019-09-13 09:00:28,234 - average_price.7w566cLl - open_orders: [{'price': 176.8, 'orderQty': 10, 'side': 'buy'}]
-money_printer_1  | 2019-09-13 09:00:28,234 - average_price.7w566cLl - last_trade_price: 179.2
-money_printer_1  | 2019-09-13 09:00:28,234 - average_price.7w566cLl - last_order_price: 179.2
-money_printer_1  | 2019-09-13 09:00:28,234 - average_price.7w566cLl - existing_orders_price: [176.8]
-money_printer_1  | 2019-09-13 09:00:28,234 - average_price.7w566cLl - design_orders_price: []
-money_printer_1  | 2019-09-13 09:00:28,234 - average_price.7w566cLl - grid calculated: {'price': 174.2, 'orderQty': 10, 'side': 'buy'}
-money_printer_1  | 2019-09-13 09:00:28,234 - average_price.7w566cLl - reverse calculated: {}
+money_printer_1  | 2019-09-13 09:00:28,233 - trades_price.7w566cLl - positions: {'average_price': 0.0, 'size': 0.0}
+money_printer_1  | 2019-09-13 09:00:28,234 - trades_price.7w566cLl - open_orders: [{'price': 176.8, 'orderQty': 10, 'side': 'buy'}]
+money_printer_1  | 2019-09-13 09:00:28,234 - trades_price.7w566cLl - last_trade_price: 179.2
+money_printer_1  | 2019-09-13 09:00:28,234 - trades_price.7w566cLl - last_order_price: 179.2
+money_printer_1  | 2019-09-13 09:00:28,234 - trades_price.7w566cLl - existing_orders_price: [176.8]
+money_printer_1  | 2019-09-13 09:00:28,234 - trades_price.7w566cLl - design_orders_price: []
+money_printer_1  | 2019-09-13 09:00:28,234 - trades_price.7w566cLl - grid calculated: {'price': 174.2, 'orderQty': 10, 'side': 'buy'}
+money_printer_1  | 2019-09-13 09:00:28,234 - trades_price.7w566cLl - reverse calculated: {}
 money_printer_1  | 2019-09-13 09:00:28,450 - orders_manager.7w566cLl - Canceling 1 orders:
 money_printer_1  | 2019-09-13 09:00:28,450 - orders_manager.7w566cLl -  buy 10 @ 176.80
 money_printer_1  | 2019-09-13 09:00:28,663 - orders_manager.7w566cLl - Creating 1 orders:
