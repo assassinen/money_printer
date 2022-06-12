@@ -15,5 +15,24 @@
     "SYMBOL": "tBTCUSD",
     "active": true,
     "strategy": "trades_price"
+  },
+  {
+    "py/object": "models.settings.Settings",
+    "API_KEY": "",
+    "API_SECRET": "",
+    "TOKEN": "",
+    "API_URL": "api/v2/",
+    "BASE_URL": "https://test.deribit.com/",
+    "EXCHANGE": "deribit",
+    "LOOP_INTERVAL": 10,
+    "GRID_DEPTH": 180,
+    "GRID_SIDE": "buy",
+    "ORDER_SIZE": 10,
+    "ORDER_SPREAD": 500,
+    "ORDER_STEP": 100,
+    "START_STEP": 5,
+    "SYMBOL": "BTC-PERPETUAL",
+    "active": true,
+    "strategy": "trades_price"
   }
 ]
