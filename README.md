@@ -23,15 +23,13 @@ Money printer is a bot designed for cryptocurrency trading. The bot is able to t
     $ cd grid_client
 
 ## Register a new user
-      open [create user](http://grid-bot-server.herokuapp.com/docs#/operations/users_new)
-[a link](https://github.com/user/repo/blob/branch/other_file.md)
-
+      open http://grid-bot-server.herokuapp.com/docs#/operations/users_new
       set "Username"
       set "Password"
       press "Set API Request"
 
 ## Create new access tokens
-      open [create token](http://grid-bot-server.herokuapp.com/docs#/operations/tokens_new)
+      open http://grid-bot-server.herokuapp.com/docs#/operations/tokens_new
       set "Username"
       set "Password"
       press "Set API Request"
