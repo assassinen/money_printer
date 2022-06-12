@@ -27,14 +27,13 @@ Money printer is a bot designed for cryptocurrency trading. The bot is able to t
       set "Username"
       set "Password"
       press "Set API Request"
-      set access_token in TOKEN 
-      сopy access_token in TOKEN field to settings/bot_settings.json
 
 ## Create new access tokens
       open http://grid-bot-server.herokuapp.com/docs#/operations/tokens_new
       set "Username"
       set "Password"
       press "Set API Request"
+      сopy access_token in TOKEN field to settings/bot_settings.json
 
 ## Settings 
 * change the settings for the bot `settings/bot_settings.json`:
