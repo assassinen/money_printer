@@ -45,8 +45,8 @@ Money printer is a bot designed for cryptocurrency trading. The bot is able to t
     "API_SECRET": "your_API_SECRET_for_bitmex",         # set your API_SECRET
     "TOKEN": "your_grid_bot_server"                     # set your grid-bot-server access_token
     "API_URL": "v2",                                    # API version
-    "BASE_URL": "https://api.bitfinex.com/",            # exchange url (e.g https://www.bitmex.com, https://www.deribit.com)
-    "EXCHANGE": "bitfinex",                             # exchange name (e.g bitmex, deribit)
+    "BASE_URL": "https://api.bitfinex.com/",            # exchange url (e.g https://www.bitfinex.com, https://www.deribit.com)
+    "EXCHANGE": "bitfinex",                             # exchange name (e.g bitfinex, deribit)
     "LOOP_INTERVAL": 10,                                # refresh rate in seconds
     "GRID_DEPTH": 100,                                  # maximum number of orders
     "GRID_SIDE": "buy",                                 # direction of orders to close a position
