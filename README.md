@@ -20,7 +20,7 @@ Money printer is a bot designed for cryptocurrency trading. The bot is able to t
 
 ## Clone
     $ git clone https://github.com/assassinen/money_printer.git
-    $ cd grid_client
+    $ cd money_printer
 
 ## Register a new user
       open http://45.141.102.133:5000/docs#/operations/users_new
